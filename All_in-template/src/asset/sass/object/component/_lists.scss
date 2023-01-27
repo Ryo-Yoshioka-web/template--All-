@@ -1,0 +1,27 @@
+/* c-lists
+--------------------------- */
+@use "./../../foundation/system" as *;
+
+.c-lists-title {
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+.c-lists {
+    &__list {
+        position: relative;
+        padding-left: 24px;
+        &:before {
+            position: absolute;
+            left: 0;
+            content: "\e876";
+            font-family: "Material Icons";
+            font-weight: 900;
+        }
+    }
+
+    @include breakpoint(tablet) {
+    }
+    @include breakpoint(pc) {
+    }
+}
